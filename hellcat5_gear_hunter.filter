@@ -68,24 +68,46 @@ Show
 	PlayAlertSound 9 150
 	
 #************************
-# msp device items
+# map device items
 #************************
-# map drops - magenta background black text
+# map drops - magenta background black text - top tier
 Show
-	Class Maps "Map Fragments"
+	Class Maps
+	DropLevel >= 79
 	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 200 0 150
+	SetBackgroundColor 200 0 150
+	PlayAlertSound 7 200
+
+# map drops - magenta background black text - middle tier
+Show
+	Class Maps
+	DropLevel >= 74
+	DropLevel <= 78
+	SetFontSize 40
 	SetTextColor 0 0 0
 	SetBorderColor 200 0 150
 	SetBackgroundColor 200 0 150
 	PlayAlertSound 7 150
-	
-# goddess offering  - magenta background black test
+
+# map drops - magenta background black text - low tier
 Show
-	BaseType Offering
+	Class Maps
+	DropLevel >= 62
+	DropLevel <= 73
+	SetFontSize 40
+	SetTextColor 0 0 0
+	SetBorderColor 170 0 120
+	SetBackgroundColor 170 0 120
+
+# map fragments and other map types - magenta black text
+Show
+	Class Map
 	SetFontSize 45
 	SetTextColor 0 0 0
-	SetBorderColor 200 0 150
-	SetBackgroundColor 200 0 150
+	SetBorderColor 230 0 180
+	SetBackgroundColor 230 0 180
 	PlayAlertSound 7 150
 	
 #************************
@@ -102,7 +124,6 @@ Show
 
 # 5 linked sockets - grey background black text - endgame basetypes only
 Show
-#	BaseType "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Imperial Staff" "Judgement Staff" "Eclipse Staff" "Despot Axe" "Void Axe" "Fleshripper" "Imperial Maul" "Terror Maul" "Coronal Maul" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Astral Plate" "Gladiator Plate" "Glorious Plate" "Exquisite Leather" "Zodiac Leather" "Assassin's Garb" "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Sacrificial Garb"
 	DropLevel >= 62
 	LinkedSockets 5
 	SetFontSize 45
@@ -118,15 +139,13 @@ Show
 	SetTextColor 238 210 145
 	SetBorderColor 80 80 80
 	SetBackgroundColor 80 80 80
-	PlayAlertSound 4 150	
+	PlayAlertSound 4 150
 	
 #************************
 # vendor recipes
 #************************
 # regal recipe - blue background black text - endgame basetypes
 Show
-#	Class Claw Dagger Wand One Hand Thrusting Sword Axe Mace Bow Stave Two Hand Gloves Boots Body Armour Helmet Shield Currency Sceptre Map Fragment Jewel Divination Card 
-#	BaseType "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Imperial Staff" "Judgement Staff" "Eclipse Staff" "Despot Axe" "Void Axe" "Fleshripper" "Imperial Maul" "Terror Maul" "Coronal Maul" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Imperial Claw" "Terror Claw" "Gemini Claw" "Imperial Skean" "Demon Dagger" "Sai" "Royal Axe" "Infernal Axe" "Runic Hatchet" "Auric Mace" "Nightmare Mace" "Behemoth Mace" "Legion Sword" "Vaal Blade" "Eternal Sword" "Midnight Blade" "Tiger Hook" "Carnal Sceptre" "Void Sceptre" "Sambar Sceptre" "Spiraled Foil" "Vaal Rapier" "Jewelled Foil" "Harpy Rapier" "Dragoon Sword" "Tornado Wand" "Prophecy Wand" "Profane Wand"	"Astral Plate" "Gladiator Plate" "Glorious Plate" "Exquisite Leather" "Zodiac Leather" "Assassin's Garb" "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar" "Elegant Ringmail" "Saint's Hauberk" "Saintly Chainmail" "Blood Raiment" "Sadist Garb" "Carnal Armour" "Sacrificial Garb" "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots" "Titan Gauntlets" "Slink Gloves" "Sorcerer Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Eternal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet" "Praetor Crown" "Deicide Mask" "Colossal Tower Shield" "Pinnacle Tower Shield" "Crusader Buckler" "Imperial Buckler" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Cardinal Round Shield" "Teak Round Shield" "Elegant Round Shield" "Champion Kite Shield" "Mosaic Kite Shield" "Archon Kite Shield" "Mirrored Spiked Shield" "Supreme Spiked Shield" "Pig-Faced Bascinet" "Prophet Crown" "Vaal Mask" "Assassin's Boots" "Vaal Buckler" "Vaal Spirit Shield" "Spiny Round Shield" "Branded Kite Shield" "Alder Spiked Shield"
 	DropLevel >= 62
 	Rarity Rare
 	ItemLevel >= 75
@@ -145,7 +164,7 @@ Show
     SetBorderColor 47 91 244
 	SetBackgroundColor 47 91 244
 
-# regal recipe - low tier - dark blue background black text
+# regal recipe - mid to low tier - blue background golden text
 Show
 	Height <= 3
 	Width <= 2
@@ -154,7 +173,7 @@ Show
 	SetTextColor 235 207 159
     SetBorderColor 62 128 188
 	SetBackgroundColor 62 128 188
-	
+
 # chaos recipe - golden background black text - endgame basetypes
 Show
 	DropLevel >= 62
@@ -177,7 +196,7 @@ Show
 	SetBorderColor 223 150 13
     SetBackgroundColor 223 150 13
 	
-# chaos recipe - low tier basetypes
+# chaos recipe - mid to low tier basetypes
 Show
     Height <= 3
 	Width <= 2
@@ -188,7 +207,7 @@ Show
 	SetBorderColor 200 127 0
     SetBackgroundColor 200 127 0
 	
-#chance recipe - low tier basetypes
+# chance recipe - raddish background black text
 Show
     Height <= 3
 	Width <= 2
@@ -198,15 +217,6 @@ Show
     SetBorderColor 250 50 90
 	SetBackgroundColor 250 50 90
 
-#chance recipe - rings amulets belts quivers
-Show
-	Class Ring Amulet Belt Quiver
-    Rarity Rare
-	ItemLevel < 60
-	SetTextColor 0 0 0
-    SetBorderColor 250 50 90
-	SetBackgroundColor 250 50 90
-	
 # chisel vendor recipe (one of the maces below quality 20 + map = chisel) - pee yellow background black text
 Show
 	Class "One Hand Mace"
@@ -224,8 +234,8 @@ Show
     BaseType "Mirror of Kalandra"
 	SetFontSize 45
 	SetTextColor 0 0 0
-	SetBorderColor 170 158 130
-	SetBackgroundColor 170 158 130
+	SetBorderColor 230 218 190
+	SetBackgroundColor 230 218 190
 	PlayAlertSound 1 200
 
 # tier 2 currency - default currency text set as background black text
