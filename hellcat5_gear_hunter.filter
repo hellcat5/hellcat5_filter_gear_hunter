@@ -225,6 +225,26 @@ Show
 	SetTextColor 75 50 0
 	SetBorderColor 125 125 0
 	SetBackgroundColor 125 125 0
+
+#************************
+# flasks
+#************************
+# utility flasks - grey background black text
+Show
+	Class "Utility Flasks"
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 120 120 120
+	SetBackgroundColor 120 120 120
+
+# life / mana potions - endgame - grey background black text
+Show
+	Class Life Mana Hybrid
+	DropLevel >= 60
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 180 180 180
+	SetBackgroundColor 180 180 180
 	
 #************************
 # currency
