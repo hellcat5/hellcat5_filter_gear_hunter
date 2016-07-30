@@ -1,6 +1,6 @@
 #Created By: hellcat5
 #creation date: 20160626
-#update date: 20160723
+#update date: 20160726
 #purpose: custom filter for path of exile - gear hunter T7 and lower maps
 #include: reference.txt
 #
@@ -78,43 +78,58 @@ Show
 #************************
 # divination cards
 #************************
-#divination card t1 - 1ex + brownish orange background black text
+#divination card t1 - 2ex + brownish orange background black text
 Show
 	Class "Divination Card"
-	BaseType "Abandoned Wealth" "The Artist" "Audacity" "The Brittle Emperor" "The Devastator" "Dialla's Subjugation" "The Doctor" "The Dragon's Heart" "The Fiend" "Heterochromia" "Hope" "House of Mirrors" "The Immortal" "Hunter's Reward" "Last Hope" "The Last One Standing" "The Queen" "The Thaumaturgist" "Time-Lost Relic" "The Valkyrie" "The Vast" "Wealth and Power"
+	BaseType "The Brittle Emperor" "The Doctor" "The Fiend" "The Formless Sea" "House of Mirrors" "Hunter's Reward"
 	SetFontSize 45
 	SetTextColor 0 0 0
 	SetBorderColor 200 100 0
 	SetBackgroundColor 200 100 0
 	PlayAlertSound 2 150
 
-#divination card t2 - 20c to 1ex brownish orange background black text
+#divination card t2 - 1ex to 2ex brownish orange background black text
 Show
 	Class "Divination Card"
-	BaseType "The Aesthete" "The Betrayal" "Blind Venture" "The Body" "Bowyer's Dream" "The Calling" "The Celestial Justicar" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Enlightened" "The Ethereal" "The Formless Sea" "Gemcutter's Promise" "The Harvester" "The Hunger" "The King's Heart" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "The Offering" "The Risk" "The Spoiled Prince" "Volatile Power" "The Warlord" "The Watcher"
+	BaseType "The Immortal" "The Queen" "The Thaumaturgist"
 	SetFontSize 45
 	SetTextColor 0 0 0
 	SetBorderColor 170 70 0
 	SetBackgroundColor 170 70 0
 	PlayAlertSound 2 150
 
-#divination card t3 - 10c to 20c brownish orange background black text
+#divination card t3 - 20c to 1ex brownish orange background black text
 Show
 	Class "Divination Card"
-	BaseType "Anarchy's Price" "Assassin's Favour" "The Avenger" "Birth of the Three" "The Cataclysm" "The Chains that Bind" "Emperor of Purity" "The Flora's Gift" "The Gentleman" "The Gladiator" "Glimmer of Hope" "Hubris" "The Poet" "Pride Before the Fall" "The Sephirot" "The Soul" "The Stormcaller" "Tranquillity" "Treasure Hunter" "The Web" "The Wind"
+	BaseType "Abandoned Wealth" "The Artist" "The Celestial Justicar" "The Dragon's Heart" "The Ethereal" "The Harvester" "Heterochromia" "The Hunger" "The King's Heart" "Last Hope" "The Last One Standing" "Lysah's Respite" "The Offering" "Pride Before the Fall" "Time-Lost Relic" "The Valkyrie" "The Vast" "Wealth and Power"
 	SetFontSize 40
 	SetTextColor 0 0 0
 	SetBorderColor 170 70 0
 	SetBackgroundColor 170 70 0
 	PlayAlertSound 3 150
 
-#divination card t4 - brownish orange background black text
+#divination card t4 - 10c to 20c brownish orange background black text
 Show
 	Class "Divination Card"
+	BaseType "Bowyer's Dream" "The Dapper Prodigy" "The Enlightened" "Hope" "Lucky Deck" "The Sephirot" "The Tyrant" "The Warlord" "The Wolf"
 	SetFontSize 40
 	SetTextColor 0 0 0
-	SetBorderColor 140 40 0
-	SetBackgroundColor 140 40 0
+	SetBorderColor 170 70 0
+	SetBackgroundColor 170 70 0
+	PlayAlertSound 3 150
+
+#divination card t5 - 2c to 10c - brownish orange background black text
+Show
+	Class "Divination Card"
+	BaseType "The Aesthete" "The Arena Champion" "Assassin's Favour" "The Avenger" "The Battle Born" "The Body" "The Calling" "The Cartographer" "Cartographer's Delight" "The Chains that Bind" "Chaotic Disposition" "The Cursed King" "The Dark Mage" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "The Fletcher" "The Gentleman" "The Gladiator" "Glimmer of Hope" "The Hoarder" "Humility" "Hunter's Resolve" "The Inventor" "Jack in the Box" "The Jester" "Lost Worlds" "Lucky Connections" "The Mercenary" "Merciless Armament" "The Pact" "The Penitent" "Rats" "The Risk" "The Road to Power" "Scholar of the Seas" "The Soul" "The Spoiled Prince" "The Stormcaller" "The Surveyor" "The Trial" "The Union" "Vinia's Token" "The Visionary" "Volatile Power" "The Watcher" "The Wind"
+	SetTextColor 0 0 0
+	SetBorderColor 170 70 0
+	SetBackgroundColor 170 70 0
+	PlayAlertSound 3 150
+
+#divination card hide the remaining
+Hide
+	Class "Divination Card"
 	
 #************************
 # map device items
@@ -189,6 +204,39 @@ Show
 	SetBorderColor 80 80 80
 	SetBackgroundColor 80 80 80
 	PlayAlertSound 4 150
+
+#************************
+# vaal corrupt white sockets
+#************************
+# white socket corrupted - three white - off hand gem leveling
+Show
+	Class Claw Dagger Wand One Hand Sceptres Shields
+	Sockets 3
+	SocketGroup WWW
+	SetFontSize 45
+	SetTextColor 255 255 255
+	SetBorderColor 143 33 0
+	SetBackgroundColor 143 33 0
+	PlayAlertSound 2 150
+
+# white socket corrupted - at least two white - off hand gem leveling
+Show
+	Class Claw Dagger Wand One Hand Sceptres Shields
+	Sockets 3
+	SocketGroup WW
+	SetFontSize 40
+	SetTextColor 255 255 255
+	SetBorderColor 143 33 0
+	SetBackgroundColor 143 33 0
+
+# white socket corrupted - at least one white - off hand gem leveling
+Show
+	Class Claw Dagger Wand One Hand Sceptres Shields
+	Sockets 3
+	SocketGroup W
+	SetTextColor 255 255 255
+	SetBorderColor 113 3 0
+	SetBackgroundColor 113 3 0
 	
 #************************
 # vendor recipes
@@ -387,6 +435,7 @@ Show
 # rgb vendor recipe
 Show
 	SocketGroup RGB
+	Height < 4
 	Rarity < Rare
 	SetFontSize 45
 	SetTextColor 0 0 175
