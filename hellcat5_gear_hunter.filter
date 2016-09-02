@@ -1,6 +1,6 @@
 #Created By: hellcat5
 #creation date: 20160626
-#update date: 20160726
+#update date: 20160902
 #purpose: custom filter for path of exile - gear hunter T7 and lower maps
 #include: reference.txt
 #
@@ -14,7 +14,7 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 170 158 130
 	SetBackgroundColor 170 158 130
-	PlayAlertSound 1 200
+	PlayAlertSound 1 300
 
 #************************
 # uniques
@@ -25,21 +25,21 @@ Show
 	Rarity Unique
 	SetFontSize 45
 	SetTextColor 205 126 67 
-	PlayAlertSound 2 150
+	PlayAlertSound 2 300
 
 # uniques t2 - 1 exalted up - text enlarged (40) sound 3
 Show
 	BaseType "Onyx Amulet" "Gold Ring" "Unset Ring" "Paua Ring" "Sacrificial Garb" "Vaal Mask" "Corrugated Buckler" "Imperial Bow" "Great Mallet" "Judgement Staff" "Vaal Blade" "Silver Flask" "Sapphire Flask" "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel" "Hubris Circlet"
 	Rarity Unique
 	SetFontSize 45
-	PlayAlertSound 2 150
+	PlayAlertSound 2 300
 
 # uniques t3 - 10 chaos and up - text enlarged (40) sound 3
 Show
 	BaseType "Penetrating Arrow Quiver" "Broadhead Arrow Quiver" "Agate Amulet" "Golden Plate" "Crusader Plate" "Zodiac Leather" "Savant's Robe" "Simple Robe" "Necromancer Silks" "Reinforced Greaves" "Sharkskin Boots" "Conjurer Boots" "Legion Boots" "Goliath Gauntlets" "Ancient Gauntlets" "Deerskin Gloves" "Conjurer Gloves" "Crusader Gloves" "Ursine Pelt" "Nightmare Bascinet" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Archon Kite Shield" "Large Hybrid Flask" "Hallowed Hybrid Flask" "Granite Flask" "Imperial Staff" "Auric Mace" "Platinum Sceptre" "Crystal Sceptre" "Terror Maul" "Slaughter Knife" "Fiend Dagger" "Imperial Skean" "Terror Claw" "Imperial Claw" "Ranger Bow" "Spine Bow" "Siege Axe"
 	Rarity Unique
 	SetFontSize 40
-	PlayAlertSound 3 150
+	PlayAlertSound 3 300
 
 # uniques t5 - text enlarged (40) darker font color
 Hide
@@ -55,7 +55,7 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 155 0 235
 	SetBackgroundColor 155 0 235
-	PlayAlertSound 9 150
+	PlayAlertSound 9 300
 
 #************************
 # gems
@@ -68,7 +68,7 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 99 200 55
 	SetBackgroundColor 99 200 55
-	PlayAlertSound 6 150
+	PlayAlertSound 6 300
 
 #Show gem drops - you can add conditions here to cut down on the gems shown
 Show
@@ -86,50 +86,61 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 200 100 0
 	SetBackgroundColor 200 100 0
-	PlayAlertSound 2 150
+	PlayAlertSound 2 300
 
 #divination card t2 - 1ex to 2ex brownish orange background black text
 Show
 	Class "Divination Card"
-	BaseType "The Immortal" "The Queen" "The Thaumaturgist"
+	BaseType "The Immortal" "The Queen" "The Thaumaturgist" "Mawr Blaidd"
 	SetFontSize 45
 	SetTextColor 0 0 0
 	SetBorderColor 170 70 0
 	SetBackgroundColor 170 70 0
-	PlayAlertSound 2 150
+	PlayAlertSound 2 300
 
 #divination card t3 - 20c to 1ex brownish orange background black text
 Show
 	Class "Divination Card"
-	BaseType "Abandoned Wealth" "The Artist" "The Celestial Justicar" "The Dragon's Heart" "The Ethereal" "The Harvester" "Heterochromia" "The Hunger" "The King's Heart" "Last Hope" "The Last One Standing" "Lysah's Respite" "The Offering" "Pride Before the Fall" "Time-Lost Relic" "The Valkyrie" "The Vast" "Wealth and Power"
+	BaseType "Abandoned Wealth" "The Artist" "The Celestial Justicar" "The Dragon's Heart" "The Ethereal" "The Harvester" "Heterochromia" "The Hunger" "The King's Heart" "Last Hope" "The Last One Standing" "Lysah's Respite" "The Offering" "Pride Before the Fall" "Time-Lost Relic" "The Valkyrie" "The Vast" "Wealth and Power" "The Void"
 	SetFontSize 40
 	SetTextColor 0 0 0
 	SetBorderColor 170 70 0
 	SetBackgroundColor 170 70 0
-	PlayAlertSound 3 150
+	PlayAlertSound 3 300
 
 #divination card t4 - 10c to 20c brownish orange background black text
 Show
 	Class "Divination Card"
-	BaseType "Bowyer's Dream" "The Dapper Prodigy" "The Enlightened" "Hope" "Lucky Deck" "The Sephirot" "The Tyrant" "The Warlord" "The Wolf"
+	BaseType "Bowyer's Dream" "The Dapper Prodigy" "The Enlightened" "Hope" "Lucky Deck" "The Sephirot" "The Tyrant" "The Warlord" "The Wolf" 
 	SetFontSize 40
 	SetTextColor 0 0 0
 	SetBorderColor 170 70 0
 	SetBackgroundColor 170 70 0
-	PlayAlertSound 3 150
+	PlayAlertSound 3 300
 
 #divination card t5 - 2c to 10c - brownish orange background black text
 Show
 	Class "Divination Card"
-	BaseType "The Aesthete" "The Arena Champion" "Assassin's Favour" "The Avenger" "The Battle Born" "The Body" "The Calling" "The Cartographer" "Cartographer's Delight" "The Chains that Bind" "Chaotic Disposition" "The Cursed King" "The Dark Mage" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "The Fletcher" "The Gentleman" "The Gladiator" "Glimmer of Hope" "The Hoarder" "Humility" "Hunter's Resolve" "The Inventor" "Jack in the Box" "The Jester" "Lost Worlds" "Lucky Connections" "The Mercenary" "Merciless Armament" "The Pact" "The Penitent" "Rats" "The Risk" "The Road to Power" "Scholar of the Seas" "The Soul" "The Spoiled Prince" "The Stormcaller" "The Surveyor" "The Trial" "The Union" "Vinia's Token" "The Visionary" "Volatile Power" "The Watcher" "The Wind"
+	BaseType "The Aesthete" "The Arena Champion" "Assassin's Favour" "The Avenger" "The Battle Born" "The Body" "The Calling" "The Cartographer" "Cartographer's Delight" "The Chains that Bind" "Chaotic Disposition" "The Cursed King" "The Dark Mage" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "The Fletcher" "The Gentleman" "The Gladiator" "Glimmer of Hope" "The Hoarder" "Humility" "Hunter's Resolve" "The Inventor" "Jack in the Box" "The Jester" "Lost Worlds" "Lucky Connections" "The Mercenary" "Merciless Armament" "The Pact" "The Penitent" "Rats" "The Risk" "The Road to Power" "Scholar of the Seas" "The Soul" "The Spoiled Prince" "The Stormcaller" "The Surveyor" "The Trial" "The Union" "Vinia's Token" "The Visionary" "Volatile Power" "The Watcher" "The Wind" "The Oath" "The Scavenger"
 	SetTextColor 0 0 0
 	SetBorderColor 170 70 0
 	SetBackgroundColor 170 70 0
-	PlayAlertSound 3 150
+	PlayAlertSound 3 300
 
-#divination card hide the remaining
-Hide
+#divination card t6 - 1c - brownish orange background black text
+Show
 	Class "Divination Card"
+	BaseType "Audacity" "The Betrayal" "Birth of the Three" "Blind Venture" "Boundless Realms" "The Cataclysm" "The Catalyst" "The Conduit" "Coveted Possession" "Death" "The Demoness" "The Doppelganger" "The Drunken Aristocrat" "Emperor's Luck" "The Encroaching Darkness" "The Explorer" "The Feast" "The Fox" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "Hubris" "The Incantation" "Light and Truth" "The Lord in Black" "The Pack Leader" "The Poet" "Prosperity" "Shard of Fate" "The Siren" "The Throne" "The Traitor" "Tranquillity" "Treasure Hunter" "The Web" "The Wrath"
+	SetTextColor 0 0 0
+	SetBorderColor 170 70 0
+	SetBackgroundColor 170 70 0
+
+#divination card t7 - under 1c - brownish orange background black text
+Show
+	Class "Divination Card"
+	SetTextColor 0 0 0
+	SetBorderColor 140 40 0
+	SetBackgroundColor 140 40 0
 	
 #************************
 # map device items
@@ -142,7 +153,7 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 200 0 150
 	SetBackgroundColor 200 0 150
-	PlayAlertSound 7 200
+	PlayAlertSound 7 300
 
 # map drops - magenta background black text - middle tier
 Show
@@ -153,12 +164,12 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 200 0 150
 	SetBackgroundColor 200 0 150
-	PlayAlertSound 7 150
+	PlayAlertSound 7 300
 
 # map drops - magenta background black text - low tier
 Show
 	Class Maps
-	DropLevel >= 62
+	DropLevel >= 58
 	DropLevel <= 73
 	SetFontSize 40
 	SetTextColor 0 0 0
@@ -172,7 +183,7 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 230 0 180
 	SetBackgroundColor 230 0 180
-	PlayAlertSound 7 150
+	PlayAlertSound 7 300
 	
 #************************
 # 6 sockets - 6L 5L 6S
@@ -184,7 +195,7 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 200 200 200
 	SetBackgroundColor 200 200 200
-	PlayAlertSound 8 150
+	PlayAlertSound 8 300
 
 # 5 linked sockets - grey background black text - endgame basetypes only
 Show
@@ -194,7 +205,7 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 120 120 120
 	SetBackgroundColor 120 120 120
-	PlayAlertSound 5 150
+	PlayAlertSound 5 300
 
 # 6 sockets - dark grey background orange text
 Show
@@ -203,7 +214,7 @@ Show
 	SetTextColor 238 210 145
 	SetBorderColor 80 80 80
 	SetBackgroundColor 80 80 80
-	PlayAlertSound 4 150
+	PlayAlertSound 4 300
 
 #************************
 # vaal corrupt white sockets
@@ -217,7 +228,7 @@ Show
 	SetTextColor 255 255 255
 	SetBorderColor 143 33 0
 	SetBackgroundColor 143 33 0
-	PlayAlertSound 2 150
+	PlayAlertSound 2 300
 
 # white socket corrupted - at least two white - off hand gem leveling
 Show
@@ -353,7 +364,7 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 230 218 190
 	SetBackgroundColor 230 218 190
-	PlayAlertSound 1 200
+	PlayAlertSound 1 300
 
 # tier 2 currency - default currency text set as background black text
 Show
@@ -362,7 +373,7 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 200 188 160
 	SetBackgroundColor 200 188 160
-	PlayAlertSound 2 200
+	PlayAlertSound 2 300
 
 # tier 3 currency - drop or recipe only - default currency text set as background black text
 Show
@@ -371,7 +382,7 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 170 158 130
 	SetBackgroundColor 170 158 130
-	PlayAlertSound 6 150
+	PlayAlertSound 6 300
 
 # tier 4 currency - default currency text set as background black text
 Show
@@ -380,7 +391,7 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 140 128 100
 	SetBackgroundColor 140 128 100
-	PlayAlertSound 3 150
+	PlayAlertSound 3 300
 	
 # wisdom and portal scrolls - parchment background black text
 Show
@@ -393,6 +404,55 @@ Show
 # Tier 5 and league specific currency - enlarged font size
 Show
 	Class Currency
+	SetFontSize 45
+
+#************************
+# essence league
+#************************
+# essence tier 1
+Show
+	BaseType "Whispering Essence"
+	SetFontSize 45
+
+# essence tier 2
+Show
+	BaseType "Muttering Essence"
+	SetFontSize 45
+
+# essence tier 3
+Show
+	BaseType "Weeping Essence"
+	SetFontSize 45
+
+# essence tier 4
+Show
+	BaseType "Wailing Essence"
+	SetFontSize 45
+
+# essence tier 5
+Show
+	BaseType "Screaming Essence"
+	SetFontSize 45
+
+# essence tier 6
+Show
+	BaseType "Shrieking Essence"
+	SetFontSize 45
+
+# essence tier 7
+Show
+	BaseType "Deafening Essence"
+	SetFontSize 45
+
+# essence tier 8
+Show
+	BaseType Essence
+	SetFontSize 45
+
+# essence - seal, sextant, unshaping
+Show
+	Class Currency
+	BaseType Seal Sextant Unshaping
 	SetFontSize 45
 	
 #************************
@@ -408,7 +468,7 @@ Show
 	Class Labyrinth
 	SetFontSize 45
 	SetTextColor 200 120 0
-	PlayAlertSound 9 150
+	PlayAlertSound 9 300
 
 #************************
 # chancing, crafting, alching, build gear
