@@ -393,7 +393,7 @@ Show
 # utility flasks - grey background black text
 Show
 	Class "Utility Flasks"
-	DropLevel < 68
+	ItemLevel < 68
 	SetFontSize 45
 	SetTextColor 0 0 0
 	SetBorderColor 120 120 120
