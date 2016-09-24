@@ -1,6 +1,6 @@
 #Created By: hellcat5
 #creation date: 20160626
-#update date: 20160922
+#update date: 20160923
 #purpose: custom filter for path of exile - gear hunter T7 and lower maps
 #include: reference.txt
 #
@@ -429,16 +429,6 @@ Show
 	SetBorderColor 120 120 120
 	SetBackgroundColor 120 120 120
 
-# life / mana potions - beginning - grey background black text
-Show
-	Class Life Mana Hybrid
-	DropLevel <= 59
-	ItemLevel < 68
-	SetFontSize 40
-	SetTextColor 0 0 0
-	SetBorderColor 120 120 120
-	SetBackgroundColor 120 120 120
-	
 #************************
 # currency
 #************************
