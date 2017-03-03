@@ -563,6 +563,18 @@ Show
 	SetFontSize 45
 	PlayAlertSound 6 200
 	SetTextColor 181 71 254
+
+#************************
+# leagacy league
+#************************
+# Leaguestone - magenta black text
+Show
+	Class Leaguestone
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBorderColor 230 0 180
+	SetBackgroundColor 230 0 180
+	PlayAlertSound 7 200
 	
 #************************
 # special cases
